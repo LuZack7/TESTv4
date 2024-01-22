@@ -1,0 +1,99 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <title>Opt 2 - MSP | Wallboard</title>
+    <link rel="stylesheet" href="/static/css/wallboard.css?v=98797c42-af25-464e-bf40-31f1b518b968"/>
+            <link rel="stylesheet" href="//storage.googleapis.com/v-content/8b3a9c4f-3e85-464b-8591-a5378c2f1bbf/global-styles.css?ver=98797c42-af25-464e-bf40-31f1b518b968"/>
+            <link rel="stylesheet" href="//storage.googleapis.com/v-content/8b3a9c4f-3e85-464b-8591-a5378c2f1bbf/master.css?ver=98797c42-af25-464e-bf40-31f1b518b968"/>
+
+</head>
+<body class="wallboard layout-5 dark" id="isRe">
+<main
+            data-is-call-switch="true"
+>
+        <div class="time">Opt 2 - MSP - <span id="date"></span> <span id="hour"></span></div>
+        <div class="modules-block">
+            <div>
+                    <div class="wb square">
+                        <span class="title">Total Calls</span>
+                        <span class="day">This Hour</span>
+                        <span class="data num_calls">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">Calls Answered</span>
+                        <span class="day">This Hour</span>
+                        <span class="data num_answered">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">Calls Abandoned</span>
+                        <span class="day">This Hour</span>
+                        <span class="data num_abandoned">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">In Queue</span>
+                        <span class="data in_queue">-</span>
+                    </div>
+                </div>
+            <div class="chart square">
+                <span class="title">Reporting Period</span>
+                <div class="min">
+                    <span class="chart_total_calls"></span><span>calls</span>
+                </div>
+                <div>
+                    <span class="chart_report_period"></span>
+                </div>
+                <div id="chart_calls" ></div>
+            </div>
+            <div>
+                    <div class="wb square">
+                        <span class="title">Average Call Time</span>
+                        <span class="day">This Hour</span>
+                        <span class="data average_duration medium">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">Average Wait Time</span>
+                        <span class="day">This Hour</span>
+                        <span class="data average_wait_duration medium">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">Max Call Time</span>
+                        <span class="day">This Hour</span>
+                        <span class="data max_duration medium">-</span>
+                    </div>
+                    <div class="wb square">
+                        <span class="title">Max Wait Time</span>
+                        <span class="day">This Hour</span>
+                        <span class="data max_wait_duration medium">-</span>
+                    </div>
+                </div>
+        </div>
+        <div class="table">
+            <ul class="user-table">
+                <li class="table-header">
+                    <span class="name">Name</span>
+                    <span class="status">Status</span>
+                    <span class="duration">Last Call <span>Duration</span><span class="abbr">Dur</span> </span>
+                    <span class="interval">Since Last Call</span>
+                    <span class="answered">Answered</span>
+                    <span class="total-duration">Total <span>Duration</span><span class="abbr">Dur</span></span>
+                    <span class="avg-duration">Avg <span>Duration</span><span class="abbr">Dur</span></span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <input type="hidden" id="wallboard_url" value="opt-2---msp"/>
+
+    <script>
+        window.wallboard = {
+            uuid: '3df9af31-a039-4ebe-97ec-abee2670dd4f',
+            isPublic: true
+        }
+    </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="/static/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="/static/js/voip/sip-wallboards-1.26.min.js"></script>
+</body>
+</html>
